@@ -6,7 +6,7 @@ body {
 .wrap {
   position: relative;
   margin: 10em 10 30em;
-  max-width: 960px;
+  max-width: 1000px;
   overscroll-behavior: contain;
 }
 
@@ -42,7 +42,10 @@ body {
   flex: 1 0 calc(22% + 2px);
   scroll-snap-align: start;
 }
-
+.track0 {
+  flex: 1 0 calc(24% + 2px);
+  scroll-snap-align: start;
+}
 .track + .track {
   margin-left: -1px;
 }
@@ -62,6 +65,11 @@ body {
   font-weight: 700;
 }
 
+.heading1row {
+  width: 1%;
+    white-space: nowrap;
+}
+
 .entry {
   border: 1px solid #ebebeb;
   border-top: 0;
@@ -69,10 +77,32 @@ body {
   height: 8em;
   padding: 1em;
 }
+.entryt1 {
+  border: 1px solid #ebebeb;
+  border-top: 0;
+  background: #fff;
+  height: 14em;
+  padding: 1em;
+}
+.entryt2 {
+  border: 1px solid #ebebeb;
+  border-top: 0;
+  background: #fff;
+  height: 14em;
+  padding: 1em;
+}
+
+.entrys1 {
+  border: 1px solid #ebebeb;
+  border-top: 0;
+  background: #fff;
+  height: 6em;
+  padding: 1em;
+}
 
 
 @media (max-width: 767px) {
   .track {
-    flex: 1 0 calc(50% + 7px);
+    flex: 1 0 calc(100% + 7px);
   }
 }
